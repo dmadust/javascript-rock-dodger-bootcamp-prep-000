@@ -130,10 +130,11 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
    if (e.which === LEFT_ARROW) {
-     console.log("pressed");
+     e.preventDefault();
      window.requestAnimationFrame(moveDodgerLeft);
    }
    else if (e.which === RIGHT_ARROW) {
+     e.preventDefault();
      moveDodgerRight();
    }
 }
